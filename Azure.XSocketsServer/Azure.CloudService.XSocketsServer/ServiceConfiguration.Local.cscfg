@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Azure.XSocketsServer" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="Azure.XSocketServerWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="XSocketsHostUri" value="ws://127.0.0.1:4502" />
+      <Setting name="XSocketsOrigins" value="http://*, https://*" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

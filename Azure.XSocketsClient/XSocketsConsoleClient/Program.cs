@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using XSockets.Client;
+using XSockets.Core.Common.Socket.Event.Interface;
 using XSockets.External;
 
 namespace XSocketsConsoleClient
@@ -23,15 +23,12 @@ namespace XSocketsConsoleClient
                     Console.WriteLine("Connected");
                 };
 
-                ws.OnClose += (s, e) =>
-                {
-                    Console.WriteLine("Disconnected");
-                };
 
                 ws.OnError += (s, e) =>
                 {
                     Console.WriteLine("Error: " + e.ToString());
                 };
+
                 
                 ws.Open();
             }

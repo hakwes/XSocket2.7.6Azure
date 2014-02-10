@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="Azure.XSocketsServer" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WorkerRole name="Azure.XSocketServerWorkerRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="XSocketsHostUri" />
+      <Setting name="XSocketsOrigins" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="XSocketsEndpoint" protocol="tcp" port="4502" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>
