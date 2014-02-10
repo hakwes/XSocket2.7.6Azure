@@ -9,6 +9,13 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Azure.CloudService.XSockets
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.XSocketsClientWorkerRole", "Azure.WorkerRole.XSocketsClient\Azure.XSocketsClientWorkerRole.csproj", "{D9D2551E-A707-42AD-AC64-FD72EEFA9522}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E3DF5E13-F32C-4357-9812-EEDEA5E724E5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
